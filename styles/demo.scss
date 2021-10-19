@@ -5,7 +5,19 @@ header {
 	background: $header-bgColor;
 }
 
-// nav styling
+@mixin para-style($size, $style) {
+	font-size: $size;
+	text-align: $style;
+	margin: 10px 0;
+}
+
+#about p {
+	@include para-style(20px, right);
+}
+
+#education p {
+	@include para-style(20px, left);
+}
 
 nav {
 	margin-top: 15px;
@@ -34,10 +46,6 @@ nav {
 
 main {
 	background: $main-bgColor;
-}
-
-#about p {
-	font-size: $pera-fontSize;
 }
 
 footer {
