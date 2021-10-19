@@ -4,4 +4,20 @@
   -webkit-box-sizing: 0;
           box-sizing: 0;
 }
+
+header {
+  background: #ffab73;
+}
+
+main {
+  background: #ffd387;
+}
+
+#about p {
+  font-size: 14px;
+}
+
+footer {
+  background: #ffaec0;
+}
 /*# sourceMappingURL=demo.css.map */
