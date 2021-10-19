@@ -1,15 +1,5 @@
-// color variable declarations
-$header-bgColor: #ffab73;
-$main-bgColor: #ffd387;
-$footer-bgColor: #ffaec0;
-$pera-fontSize: 14px;
-
-// browser reset code
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: 0;
-}
+@import "./reset";
+@import "./variables";
 
 header {
 	background: $header-bgColor;
