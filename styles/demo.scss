@@ -11,6 +11,19 @@ header {
 	margin: 10px 0;
 }
 
+// conditionally style set in sass
+@mixin setFontSize($value) {
+	@if ($value == "small") {
+		font-size: 14px;
+	} @else if ($value == "medium") {
+		font-size: 16px;
+	} @else if ($value == "large") {
+		font-size: 20px;
+	} @else {
+		font-size: none;
+	}
+}
+
 #about p {
 	@include para-style(20px, right);
 }
@@ -33,7 +46,7 @@ btn {
 }
 
 .learn-more {
-	@extend btn;
+	@extend btn; // inherit from btn
 }
 
 nav {
@@ -52,6 +65,7 @@ nav {
 				transition: 0.4s;
 				padding: 5px;
 				border-radius: 5px;
+				@include setFontSize("medium");
 			}
 
 			a:hover {
